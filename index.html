@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Kelompok</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Kelompok <span>Alpha</span></h1>
+      <nav class="nav">
+        <a href="#about">Tentang</a>
+        <a href="#team">Anggota</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Selamat datang di portofolio<br><span>Kelompok Alpha</span></h2>
+        <p>Menampilkan proyek, anggota, dan kontak kami. Gunakan ini sebagai template yang bisa kamu modifikasi.</p>
+        <a class="btn" href="#projects">Lihat Proyek Kami</a>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>Tentang Kelompok</h3>
+      <p>Kami adalah tim yang berfokus pada pengembangan web, desain, dan data. Template ini menampilkan ringkasan singkat, anggota tim, contoh proyek, dan cara menghubungi kami.</p>
+    </section>
+
+    <section id="team" class="container team">
+      <h3>Anggota Tim</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200?text=Zahran" alt="Zahran">
+          <h4>Zahran</h4>
+          <p>Front-end Developer</p>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200?text=Hamzah" alt="Hamzah">
+          <h4>Hamzah</h4>
+          <p>Back-end Developer</p>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200?text=Rafi" alt="Rafi">
+          <h4>Rafi</h4>
+          <p>Desainer UI/UX</p>
+        </article>
+
+        <article class="card">
+          <img src="https://via.placeholder.com/300x200?text=Alya" alt="Alya">
+          <h4>Alya</h4>
+          <p>Project Manager</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Proyek</h3>
+      <div class="grid projects-grid">
+        <div class="project">
+          <img src="https://via.placeholder.com/600x350?text=Proyek+1" alt="Proyek 1">
+          <h4>Sistem Informasi Sekolah</h4>
+          <p>Aplikasi manajemen data siswa sederhana.</p>
+        </div>
+        <div class="project">
+          <img src="https://via.placeholder.com/600x350?text=Proyek+2" alt="Proyek 2">
+          <h4>Website Pemerintahan Lokal</h4>
+          <p>Landing page informatif untuk layanan publik.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Kontak</h3>
+      <p>Ingin bekerja sama? Hubungi kami melalui email atau formulir di bawah ini.</p>
+      <form class="contact-form" action="#" method="post">
+        <input type="text" name="name" placeholder="Nama" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Pesan" required></textarea>
+        <button class="btn" type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Kelompok Alpha. Semua hak dilindungi.</p>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
